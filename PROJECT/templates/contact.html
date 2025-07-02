@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form action="" method="post">
+    <div>
+        {{contact.name.label}}
+        {{contact.name}}
+    </div>
+    <br>
+    <div>
+        {{contact.email.label}}
+        {{contact.email}}
+     </div>
+        <br>
+        <div>{{contact.submit}}</div>
+   
+</form>
+
+{% endblock content%}

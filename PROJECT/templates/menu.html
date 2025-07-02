@@ -1,0 +1,135 @@
+{% extends "layout.html"%}
+
+{% block content %}
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .item {
+            margin-bottom: 20px;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .price {
+            float: right;
+            color: #888;
+        }
+        .description {
+            margin-left: 15px;
+            color: #555;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Menu</h1>
+
+    <div class="section">
+        <h2>1. Appetizers</h2>
+        <div class="item">
+            <div class="name">Garlic Parmesan Fries <span class="price">500</span></div>
+            <div class="description">Crispy fries tossed with garlic butter and grated Parmesan</div>
+        </div>
+        <div class="item">
+            <div class="name">Spinach Artichoke Dip <span class="price">300</span></div>
+            <div class="description">Creamy dip served with warm tortilla chips</div>
+        </div>
+        <div class="item">
+            <div class="name">Buffalo Cauliflower Bites <span class="price">750</span></div>
+            <div class="description">Spicy breaded cauliflower with ranch or blue cheese</div>
+        </div>
+        <div class="item">
+            <div class="name">Shrimp Cocktail <span class="price">1000</span></div>
+            <div class="description">Chilled jumbo shrimp with tangy cocktail sauce</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Salads</h2>
+        <div class="item">
+            <div class="name">Caesar Salad <span class="price">100</span></div>
+            <div class="description">Romaine, croutons, shaved Parmesan, house Caesar dressing</div>
+        </div>
+        <div class="item">
+            <div class="name">Bistro Cobb <span class="price">2000</span></div>
+            <div class="description">Chicken, avocado, bacon, egg, blue cheese, tomato</div>
+        </div>
+        <div class="item">
+            <div class="name">Harvest Greens <span class="price">540</span></div>
+            <div class="description">Mixed greens, cranberries, goat cheese, candied pecans, balsamic vinaigrette</div>
+        </div>
+        <h3>Add-ons</h3>
+        <ul>
+            <li>Grilled Chicken - 100</li>
+            <li>Salmon - 450</li>
+            <li>Shrimp - 300</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Main Courses</h2>
+        <div class="item">
+            <div class="name">Hearthstone Burger <span class="price">300</span></div>
+            <div class="description">Angus beef, cheddar, lettuce, tomato, brioche bun</div>
+        </div>
+        <div class="item">
+            <div class="name">BBQ Bacon Burger <span class="price">585</span></div>
+            <div class="description">Crispy bacon, BBQ sauce, onion rings, jack cheese</div>
+        </div>
+        <div class="item">
+            <div class="name">Grilled Chicken Club <span class="price">195</span></div>
+            <div class="description">Chicken breast, avocado, bacon, Swiss, tomato</div>
+        </div>
+        <div class="item">
+            <div class="name">Black Bean Veggie Burger <span class="price">1000</span></div>
+            <div class="description">Spiced black bean patty, guac, lettuce, chipotle mayo</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Desserts</h2>
+        <div class="item">
+            <div class="name">Chocolate Lava Cake <span class="price">250</span></div>
+            <div class="description">Warm cake with molten center, vanilla ice cream</div>
+        </div>
+        <div class="item">
+            <div class="name">New York Cheesecake <span class="price">700</span></div>
+            <div class="description">Classic style with berry compote</div>
+        </div>
+        <div class="item">
+            <div class="name">Apple Crisp <span class="price">350</span></div>
+            <div class="description">Baked apples, oat topping, cinnamon, ice cream</div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+       
+ 
+
+{% endblock content %}
